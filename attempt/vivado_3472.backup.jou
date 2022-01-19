@@ -1,0 +1,89 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Wed Jun  2 16:03:13 2021
+# Process ID: 3472
+# Current directory: D:/Curriculum/Lab of Computer Organization/Projects/attempt
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent15020 D:\Curriculum\Lab of Computer Organization\Projects\attempt\attempt.xpr
+# Log file: D:/Curriculum/Lab of Computer Organization/Projects/attempt/vivado.log
+# Journal file: D:/Curriculum/Lab of Computer Organization/Projects/attempt\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {D:/Curriculum/Lab of Computer Organization/Projects/attempt/attempt.xpr}
+add_files -norecurse {{D:/Curriculum/Lab of Computer Organization/Projects/Lab06/recv.v} {D:/Curriculum/Lab of Computer Organization/Projects/Lab06/send.v}}
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+add_files -fileset constrs_1 -norecurse {{D:/Curriculum/Lab of Computer Organization/Projects/attempt/FPGAOL.xdc}}
+file mkdir D:/Curriculum/Lab of Computer Organization/Projects/attempt/attempt.srcs/sources_1/new
+file mkdir D:/Curriculum/Lab of Computer Organization/Projects/attempt/attempt.srcs/sources_1/new
+file mkdir D:/Curriculum/Lab of Computer Organization/Projects/attempt/attempt.srcs/sources_1/new
+file mkdir D:/Curriculum/Lab of Computer Organization/Projects/attempt/attempt.srcs/sources_1/new
+file mkdir D:/Curriculum/Lab of Computer Organization/Projects/attempt/attempt.srcs/sources_1/new
+file mkdir D:/Curriculum/Lab of Computer Organization/Projects/attempt/attempt.srcs/sources_1/new
+file mkdir {D:/Curriculum/Lab of Computer Organization/Projects/attempt/attempt.srcs/sources_1/new}
+close [ open {D:/Curriculum/Lab of Computer Organization/Projects/attempt/attempt.srcs/sources_1/new/attempt.v} w ]
+add_files {{D:/Curriculum/Lab of Computer Organization/Projects/attempt/attempt.srcs/sources_1/new/attempt.v}}
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+file mkdir D:/Curriculum/Lab of Computer Organization/Projects/attempt/attempt.srcs/sim_1/new
+file mkdir D:/Curriculum/Lab of Computer Organization/Projects/attempt/attempt.srcs/sim_1/new
+file mkdir D:/Curriculum/Lab of Computer Organization/Projects/attempt/attempt.srcs/sim_1/new
+file mkdir D:/Curriculum/Lab of Computer Organization/Projects/attempt/attempt.srcs/sim_1/new
+file mkdir D:/Curriculum/Lab of Computer Organization/Projects/attempt/attempt.srcs/sim_1/new
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+file mkdir D:/Curriculum/Lab of Computer Organization/Projects/attempt/attempt.srcs/sim_1/new
+file mkdir {D:/Curriculum/Lab of Computer Organization/Projects/attempt/attempt.srcs/sim_1/new}
+close [ open {D:/Curriculum/Lab of Computer Organization/Projects/attempt/attempt.srcs/sim_1/new/attempt_testbench.v} w ]
+add_files -fileset sim_1 {{D:/Curriculum/Lab of Computer Organization/Projects/attempt/attempt.srcs/sim_1/new/attempt_testbench.v}}
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_1
+launch_simulation
+source attempt_testbench.tcl
+relaunch_sim
+relaunch_sim
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 1 s
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+close_sim
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+launch_simulation
+source attempt_testbench.tcl
+run 100 us
+run 100 us
+run 100 ms
+relaunch_sim
+run 50 ms
+close_sim
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1

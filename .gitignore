@@ -1,0 +1,13 @@
+*/*.cache
+*/*.hbs
+*/*.ip_user_files
+*/*.runs
+*/*.sim
+*/*.hw
+
+*/*/*.cache
+*/*/*.hbs
+*/*/*.ip_user_files
+*/*/*.runs
+*/*/*.sim
+*/*/*.hw

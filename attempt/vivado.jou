@@ -1,0 +1,30 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Thu Jun  3 11:00:36 2021
+# Process ID: 1520
+# Current directory: D:/Curriculum/Lab of Computer Organization/Projects/attempt
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent16112 D:\Curriculum\Lab of Computer Organization\Projects\attempt\attempt.xpr
+# Log file: D:/Curriculum/Lab of Computer Organization/Projects/attempt/vivado.log
+# Journal file: D:/Curriculum/Lab of Computer Organization/Projects/attempt\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {D:/Curriculum/Lab of Computer Organization/Projects/attempt/attempt.xpr}
+update_compile_order -fileset sources_1
+launch_simulation
+source attempt_testbench.tcl
+close_sim
+launch_simulation
+add_files -norecurse {{D:/Curriculum/Lab of Computer Organization/Projects/attempt/tx.v}}
+update_compile_order -fileset sources_1
+launch_simulation
+source attempt_testbench.tcl
+relaunch_sim
+run 1 ms
+relaunch_sim
+run 1 ms
+close_sim
+launch_simulation
+source attempt_testbench.tcl
+relaunch_sim

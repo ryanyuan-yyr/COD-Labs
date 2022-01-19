@@ -1,0 +1,10 @@
+memory_initialization_radix  = 16;
+memory_initialization_vector =
+42002023
+32502823
+41002283
+40502423
+00100293
+42502023
+33002283
+00000067

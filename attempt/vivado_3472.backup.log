@@ -1,0 +1,314 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Wed Jun  2 16:03:13 2021
+# Process ID: 3472
+# Current directory: D:/Curriculum/Lab of Computer Organization/Projects/attempt
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent15020 D:\Curriculum\Lab of Computer Organization\Projects\attempt\attempt.xpr
+# Log file: D:/Curriculum/Lab of Computer Organization/Projects/attempt/vivado.log
+# Journal file: D:/Curriculum/Lab of Computer Organization/Projects/attempt\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {D:/Curriculum/Lab of Computer Organization/Projects/attempt/attempt.xpr}
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.1/data/ip'.
+add_files -norecurse {{D:/Curriculum/Lab of Computer Organization/Projects/Lab06/recv.v} {D:/Curriculum/Lab of Computer Organization/Projects/Lab06/send.v}}
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+add_files -fileset constrs_1 -norecurse {{D:/Curriculum/Lab of Computer Organization/Projects/attempt/FPGAOL.xdc}}
+file mkdir D:/Curriculum/Lab of Computer Organization/Projects/attempt/attempt.srcs/sources_1/new
+file mkdir D:/Curriculum/Lab of Computer Organization/Projects/attempt/attempt.srcs/sources_1/new
+file mkdir D:/Curriculum/Lab of Computer Organization/Projects/attempt/attempt.srcs/sources_1/new
+file mkdir D:/Curriculum/Lab of Computer Organization/Projects/attempt/attempt.srcs/sources_1/new
+file mkdir D:/Curriculum/Lab of Computer Organization/Projects/attempt/attempt.srcs/sources_1/new
+file mkdir D:/Curriculum/Lab of Computer Organization/Projects/attempt/attempt.srcs/sources_1/new
+file mkdir {D:/Curriculum/Lab of Computer Organization/Projects/attempt/attempt.srcs/sources_1/new}
+close [ open {D:/Curriculum/Lab of Computer Organization/Projects/attempt/attempt.srcs/sources_1/new/attempt.v} w ]
+add_files {{D:/Curriculum/Lab of Computer Organization/Projects/attempt/attempt.srcs/sources_1/new/attempt.v}}
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Wed Jun  2 16:25:11 2021] Launched synth_1...
+Run output will be captured here: D:/Curriculum/Lab of Computer Organization/Projects/attempt/attempt.runs/synth_1/runme.log
+[Wed Jun  2 16:25:11 2021] Launched impl_1...
+Run output will be captured here: D:/Curriculum/Lab of Computer Organization/Projects/attempt/attempt.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Wed Jun  2 16:30:14 2021] Launched synth_1...
+Run output will be captured here: D:/Curriculum/Lab of Computer Organization/Projects/attempt/attempt.runs/synth_1/runme.log
+[Wed Jun  2 16:30:14 2021] Launched impl_1...
+Run output will be captured here: D:/Curriculum/Lab of Computer Organization/Projects/attempt/attempt.runs/impl_1/runme.log
+file mkdir D:/Curriculum/Lab of Computer Organization/Projects/attempt/attempt.srcs/sim_1/new
+file mkdir D:/Curriculum/Lab of Computer Organization/Projects/attempt/attempt.srcs/sim_1/new
+file mkdir D:/Curriculum/Lab of Computer Organization/Projects/attempt/attempt.srcs/sim_1/new
+file mkdir D:/Curriculum/Lab of Computer Organization/Projects/attempt/attempt.srcs/sim_1/new
+file mkdir D:/Curriculum/Lab of Computer Organization/Projects/attempt/attempt.srcs/sim_1/new
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+file mkdir D:/Curriculum/Lab of Computer Organization/Projects/attempt/attempt.srcs/sim_1/new
+file mkdir {D:/Curriculum/Lab of Computer Organization/Projects/attempt/attempt.srcs/sim_1/new}
+close [ open {D:/Curriculum/Lab of Computer Organization/Projects/attempt/attempt.srcs/sim_1/new/attempt_testbench.v} w ]
+add_files -fileset sim_1 {{D:/Curriculum/Lab of Computer Organization/Projects/attempt/attempt.srcs/sim_1/new/attempt_testbench.v}}
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_1
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Curriculum/Lab of Computer Organization/Projects/attempt/attempt.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'attempt_testbench' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/Curriculum/Lab of Computer Organization/Projects/attempt/attempt.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj attempt_testbench_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Curriculum/Lab of Computer Organization/Projects/attempt/attempt.srcs/sources_1/new/attempt.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module attempt
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Curriculum/Lab of Computer Organization/Projects/Lab06/send.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tx
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Curriculum/Lab of Computer Organization/Projects/attempt/attempt.srcs/sim_1/new/attempt_testbench.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module attempt_testbench
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Curriculum/Lab of Computer Organization/Projects/attempt/attempt.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/Curriculum/Lab of Computer Organization/Projects/attempt/attempt.sim/sim_1/behav/xsim'
+"xelab -wto ee61dfd2674f4961860896388b6671eb --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot attempt_testbench_behav xil_defaultlib.attempt_testbench xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto ee61dfd2674f4961860896388b6671eb --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot attempt_testbench_behav xil_defaultlib.attempt_testbench xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.tx
+Compiling module xil_defaultlib.attempt
+Compiling module xil_defaultlib.attempt_testbench
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot attempt_testbench_behav
+
+****** Webtalk v2019.1 (64-bit)
+  **** SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+  **** IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source D:/Curriculum/Lab -notrace
+couldn't read file "D:/Curriculum/Lab": permission denied
+INFO: [Common 17-206] Exiting Webtalk at Wed Jun  2 16:35:37 2021...
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/Curriculum/Lab of Computer Organization/Projects/attempt/attempt.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "attempt_testbench_behav -key {Behavioral:sim_1:Functional:attempt_testbench} -tclbatch {attempt_testbench.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source attempt_testbench.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+$finish called at time : 102 ns : File "D:/Curriculum/Lab of Computer Organization/Projects/attempt/attempt.srcs/sim_1/new/attempt_testbench.v" Line 32
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'attempt_testbench_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1216.945 ; gain = 0.000
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Curriculum/Lab of Computer Organization/Projects/attempt/attempt.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'attempt_testbench' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/Curriculum/Lab of Computer Organization/Projects/attempt/attempt.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj attempt_testbench_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Curriculum/Lab of Computer Organization/Projects/attempt/attempt.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/Curriculum/Lab of Computer Organization/Projects/attempt/attempt.sim/sim_1/behav/xsim'
+"xelab -wto ee61dfd2674f4961860896388b6671eb --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot attempt_testbench_behav xil_defaultlib.attempt_testbench xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto ee61dfd2674f4961860896388b6671eb --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot attempt_testbench_behav xil_defaultlib.attempt_testbench xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+$finish called at time : 102 ns : File "D:/Curriculum/Lab of Computer Organization/Projects/attempt/attempt.srcs/sim_1/new/attempt_testbench.v" Line 32
+relaunch_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 1216.945 ; gain = 0.000
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Curriculum/Lab of Computer Organization/Projects/attempt/attempt.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'attempt_testbench' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/Curriculum/Lab of Computer Organization/Projects/attempt/attempt.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj attempt_testbench_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Curriculum/Lab of Computer Organization/Projects/attempt/attempt.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/Curriculum/Lab of Computer Organization/Projects/attempt/attempt.sim/sim_1/behav/xsim'
+"xelab -wto ee61dfd2674f4961860896388b6671eb --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot attempt_testbench_behav xil_defaultlib.attempt_testbench xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto ee61dfd2674f4961860896388b6671eb --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot attempt_testbench_behav xil_defaultlib.attempt_testbench xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+$finish called at time : 102 ns : File "D:/Curriculum/Lab of Computer Organization/Projects/attempt/attempt.srcs/sim_1/new/attempt_testbench.v" Line 32
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 1 s
+run: Time (s): cpu = 00:10:55 ; elapsed = 00:11:05 . Memory (MB): peak = 1216.945 ; gain = 0.000
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory D:/Curriculum/Lab of Computer Organization/Projects/attempt/attempt.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Wed Jun  2 16:50:52 2021] Launched synth_1...
+Run output will be captured here: D:/Curriculum/Lab of Computer Organization/Projects/attempt/attempt.runs/synth_1/runme.log
+[Wed Jun  2 16:50:52 2021] Launched impl_1...
+Run output will be captured here: D:/Curriculum/Lab of Computer Organization/Projects/attempt/attempt.runs/impl_1/runme.log
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Wed Jun  2 16:55:52 2021] Launched synth_1...
+Run output will be captured here: D:/Curriculum/Lab of Computer Organization/Projects/attempt/attempt.runs/synth_1/runme.log
+[Wed Jun  2 16:55:52 2021] Launched impl_1...
+Run output will be captured here: D:/Curriculum/Lab of Computer Organization/Projects/attempt/attempt.runs/impl_1/runme.log
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Curriculum/Lab of Computer Organization/Projects/attempt/attempt.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'attempt_testbench' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/Curriculum/Lab of Computer Organization/Projects/attempt/attempt.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj attempt_testbench_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Curriculum/Lab of Computer Organization/Projects/attempt/attempt.srcs/sources_1/new/attempt.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module attempt
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Curriculum/Lab of Computer Organization/Projects/Lab06/send.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tx
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Curriculum/Lab of Computer Organization/Projects/attempt/attempt.srcs/sim_1/new/attempt_testbench.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module attempt_testbench
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/Curriculum/Lab of Computer Organization/Projects/attempt/attempt.sim/sim_1/behav/xsim'
+"xelab -wto ee61dfd2674f4961860896388b6671eb --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot attempt_testbench_behav xil_defaultlib.attempt_testbench xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto ee61dfd2674f4961860896388b6671eb --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot attempt_testbench_behav xil_defaultlib.attempt_testbench xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.tx
+Compiling module xil_defaultlib.attempt
+Compiling module xil_defaultlib.attempt_testbench
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot attempt_testbench_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/Curriculum/Lab of Computer Organization/Projects/attempt/attempt.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "attempt_testbench_behav -key {Behavioral:sim_1:Functional:attempt_testbench} -tclbatch {attempt_testbench.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source attempt_testbench.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+$finish called at time : 102 ns : File "D:/Curriculum/Lab of Computer Organization/Projects/attempt/attempt.srcs/sim_1/new/attempt_testbench.v" Line 32
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'attempt_testbench_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 1216.945 ; gain = 0.000
+run 100 us
+run 100 us
+run 100 ms
+run: Time (s): cpu = 00:00:09 ; elapsed = 00:00:07 . Memory (MB): peak = 1216.945 ; gain = 0.000
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Curriculum/Lab of Computer Organization/Projects/attempt/attempt.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'attempt_testbench' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/Curriculum/Lab of Computer Organization/Projects/attempt/attempt.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj attempt_testbench_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Curriculum/Lab of Computer Organization/Projects/attempt/attempt.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/Curriculum/Lab of Computer Organization/Projects/attempt/attempt.sim/sim_1/behav/xsim'
+"xelab -wto ee61dfd2674f4961860896388b6671eb --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot attempt_testbench_behav xil_defaultlib.attempt_testbench xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto ee61dfd2674f4961860896388b6671eb --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot attempt_testbench_behav xil_defaultlib.attempt_testbench xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+$finish called at time : 102 ns : File "D:/Curriculum/Lab of Computer Organization/Projects/attempt/attempt.srcs/sim_1/new/attempt_testbench.v" Line 32
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 1216.945 ; gain = 0.000
+run 50 ms
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Wed Jun  2 17:17:15 2021] Launched synth_1...
+Run output will be captured here: D:/Curriculum/Lab of Computer Organization/Projects/attempt/attempt.runs/synth_1/runme.log
+[Wed Jun  2 17:17:15 2021] Launched impl_1...
+Run output will be captured here: D:/Curriculum/Lab of Computer Organization/Projects/attempt/attempt.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Wed Jun  2 18:36:22 2021] Launched synth_1...
+Run output will be captured here: D:/Curriculum/Lab of Computer Organization/Projects/attempt/attempt.runs/synth_1/runme.log
+[Wed Jun  2 18:36:22 2021] Launched impl_1...
+Run output will be captured here: D:/Curriculum/Lab of Computer Organization/Projects/attempt/attempt.runs/impl_1/runme.log
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed Jun  2 19:03:38 2021...
