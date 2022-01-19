@@ -1,3 +1,5 @@
+attempt/
+
 */*.cache
 */*.hbs
 */*.ip_user_files
